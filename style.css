@@ -1,0 +1,52 @@
+section {
+  background: white;
+}
+
+.main-heading {
+  color: blue;
+}
+
+p {
+  color: gray;
+}
+
+h2 {
+  color: magenta;
+}
+
+#top {
+  color: hotpink;
+}
+
+.header {
+  background: #d5d5d5;
+}
+
+.navigation {
+  background: #00e734;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.navigation__link {
+  color: white;
+  padding-right: 8px;
+}
+
+.navigation__link-homepage {
+  color: rebeccapurple;
+}
+
+.week-summary {
+  padding: 16px;
+  margin-bottom: 8px;
+  border: 2px solid black;
+}
+
+.week-summary__title{
+  color: brown;
+}
+
+.week-summary__description{
+  color: #0012e7;
+}
