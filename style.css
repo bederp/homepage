@@ -2,7 +2,7 @@ section {
   background: white;
 }
 
-.main-heading {
+.main__heading {
   color: blue;
 }
 
@@ -43,10 +43,19 @@ h2 {
   border: 2px solid black;
 }
 
-.week-summary__title{
+.week-summary__title {
   color: brown;
 }
 
-.week-summary__description{
+.week-summary__description {
   color: #0012e7;
+}
+
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+img {
+  margin: 0 auto;
 }

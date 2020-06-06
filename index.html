@@ -15,20 +15,24 @@
         <a class="navigation__link" href="nauka-css.html">Nauka css</a>
       </nav>
     </header>
-    <main>
-      <header id="top">
-        <h1 class="main-heading">Paweł Beder - Strona domowa</h1>
+    <main class="main">
+      <header class="main__header" id="top">
+        <h1 class="main__heading">Paweł Beder - Strona domowa</h1>
       </header>
-      <section>
-        <h2>Kim jestem?</h2>
-        <img alt="Paweł Beder zdjęcie" src="przyciete3.png" />
-        <p>
+      <section class="about">
+        <h2 class="about__header">Kim jestem?</h2>
+        <img
+          class="about__picture"
+          alt="Paweł Beder zdjęcie"
+          src="przyciete3.png"
+        />
+        <p class="about__description">
           Cześć Jesetm programistą Java który chciałby się w końcu nauczyć
           JavaScript
         </p>
       </section>
-      <section>
-        <h2>Notatki z WTF Co Ten Frontend</h2>
+      <section class="notes">
+        <h2 class="notes__heading">Notatki z WTF Co Ten Frontend</h2>
         <article class="week-summary">
           <h3 class="week-summary__title">
             Jak tworzyć prawidłowy semantycznie html?
@@ -58,7 +62,7 @@
         </article>
       </section>
 
-      <footer>Footer: To jest strona domowa Pawła Bedera</footer>
+      <footer class="footer">Footer: To jest strona domowa Pawła Bedera</footer>
       <script src="script.js"></script>
     </main>
   </body>
