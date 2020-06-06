@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>My first webpage</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -61,6 +62,64 @@
           </p>
         </article>
       </section>
+
+      <article class="week-summary">
+        <h3 class="week-summary__title">Listy w htmlu</h3>
+        <p class="week-summary__description">List nieponumerowana</p>
+        <ul class="list">
+          <li class="list__item">ul</li>
+          <li class="list__item">ol</li>
+          <li class="list__item">section</li>
+        </ul>
+        <p class="week-summary__description">Lista ponumerowana</p>
+        <ol class="list">
+          <li class="list__item">Przeanalizuj treść podziel ją na sekcje</li>
+          <li class="list__item">Podziel ją na sekcje</li>
+          <li class="list__item">Utwórz pierwszą wersję kodu</li>
+        </ol>
+        <p class="week-summary__description">Lista definicji</p>
+        <dl>
+          <dt>Div</dt>
+          <dd>
+            Div służy do wyznaczenia elementów bez znaczenia semantycznego
+          </dd>
+
+          <dt>Span</dt>
+          <dd>
+            Span to prawie to samo co div ale maa ustawiony display: inline
+          </dd>
+        </dl>
+        <p class="week-summary__description">Tabela</p>
+        <table class="table">
+          <caption>
+            Przykładowa tabelka w html
+          </caption>
+          <thead>
+            <tr>
+              <th>Kolumna A</th>
+              <th>Kolumna B</th>
+              <th>Kolumna C</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>1.</td>
+            <td>A</td>
+            <td>wiersz pierwszy</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>B</td>
+            <td>wiersz drugi</td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>C</td>
+            <td>wiersz trzeci</td>
+          </tr>
+          </tbody>
+        </table>
+      </article>
 
       <footer class="footer">Footer: To jest strona domowa Pawła Bedera</footer>
       <script src="script.js"></script>
