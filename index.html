@@ -2,9 +2,11 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My first webpage</title>
     <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <header class="header">
@@ -17,112 +19,115 @@
       </nav>
     </header>
     <main class="main">
-      <header class="main__header" id="top">
-        <h1 class="main__heading">Paweł Beder - Strona domowa</h1>
-      </header>
-      <section class="about">
-        <h2 class="about__header">Kim jestem?</h2>
-        <img
-          class="about__picture"
-          alt="Paweł Beder zdjęcie"
-          src="przyciete3.png"
-        />
-        <p class="about__description">
-          Cześć Jesetm programistą Java który chciałby się w końcu nauczyć
-          JavaScript
-        </p>
-      </section>
-      <section class="notes">
-        <h2 class="notes__heading">Notatki z WTF Co Ten Frontend</h2>
-        <article class="week-summary">
-          <h3 class="week-summary__title">
-            Jak tworzyć prawidłowy semantycznie html?
-          </h3>
-          <p class="week-summary__description">
-            Tworzenie poprawnego semantycznie Html to sztuka którą opanowało
-            niewielu.
-          </p>
-        </article>
+      <article class="main__article">
+        <header class="main__header" id="top">
+          <h1 class="main__heading">Paweł Beder - Strona domowa</h1>
+        </header>
+        <section class="notes">
+          <h2 class="notes__heading">Notatki z WTF Co Ten Frontend</h2>
+          <article class="week-summary">
+            <h3 class="week-summary__title">
+              Jak tworzyć prawidłowy semantycznie html?
+            </h3>
+            <p class="week-summary__description">
+              Tworzenie poprawnego semantycznie Html to sztuka którą opanowało
+              niewielu.
+            </p>
+          </article>
 
-        <article class="week-summary">
-          <h3 class="week-summary__title">
-            Czy nagrywanie szkoleń to prosta sprawa?
-          </h3>
-          <p class="week-summary__description">
-            Na pewno nie jest to prosta sprawa, i wymaga dużo pracy.
-          </p>
-        </article>
+          <article class="week-summary">
+            <h3 class="week-summary__title">
+              Czy nagrywanie szkoleń to prosta sprawa?
+            </h3>
+            <p class="week-summary__description">
+              Na pewno nie jest to prosta sprawa, i wymaga dużo pracy.
+            </p>
+          </article>
 
-        <article class="week-summary">
-          <h3 class="week-summary__title">
-            Czy IntelliJ jest lepszy niż VS Code
-          </h3>
-          <p class="week-summary__description">
-            Na pewno nie jest to prosta sprawa, i wymaga dużo pracy.
-          </p>
-        </article>
-      </section>
+          <article class="week-summary">
+            <h3 class="week-summary__title">
+              Czy IntelliJ jest lepszy niż VS Code
+            </h3>
+            <p class="week-summary__description">
+              Na pewno nie jest to prosta sprawa, i wymaga dużo pracy.
+            </p>
+          </article>
+          <article class="week-summary">
+            <h3 class="week-summary__title">Listy w htmlu</h3>
+            <p class="week-summary__description">List nieponumerowana</p>
+            <ul class="list">
+              <li class="list__item">ul</li>
+              <li class="list__item">ol</li>
+              <li class="list__item">section</li>
+            </ul>
+            <p class="week-summary__description">Lista ponumerowana</p>
+            <ol class="list">
+              <li class="list__item">
+                Przeanalizuj treść podziel ją na sekcje
+              </li>
+              <li class="list__item">Podziel ją na sekcje</li>
+              <li class="list__item">Utwórz pierwszą wersję kodu</li>
+            </ol>
+            <p class="week-summary__description">Lista definicji</p>
+            <dl>
+              <dt>Div</dt>
+              <dd>
+                Div służy do wyznaczenia elementów bez znaczenia semantycznego
+              </dd>
 
-      <article class="week-summary">
-        <h3 class="week-summary__title">Listy w htmlu</h3>
-        <p class="week-summary__description">List nieponumerowana</p>
-        <ul class="list">
-          <li class="list__item">ul</li>
-          <li class="list__item">ol</li>
-          <li class="list__item">section</li>
-        </ul>
-        <p class="week-summary__description">Lista ponumerowana</p>
-        <ol class="list">
-          <li class="list__item">Przeanalizuj treść podziel ją na sekcje</li>
-          <li class="list__item">Podziel ją na sekcje</li>
-          <li class="list__item">Utwórz pierwszą wersję kodu</li>
-        </ol>
-        <p class="week-summary__description">Lista definicji</p>
-        <dl>
-          <dt>Div</dt>
-          <dd>
-            Div służy do wyznaczenia elementów bez znaczenia semantycznego
-          </dd>
-
-          <dt>Span</dt>
-          <dd>
-            Span to prawie to samo co div ale maa ustawiony display: inline
-          </dd>
-        </dl>
-        <p class="week-summary__description">Tabela</p>
-        <table class="table">
-          <caption>
-            Przykładowa tabelka w html
-          </caption>
-          <thead>
-            <tr>
-              <th>Kolumna A</th>
-              <th>Kolumna B</th>
-              <th>Kolumna C</th>
-            </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <td>1.</td>
-            <td>A</td>
-            <td>wiersz pierwszy</td>
-          </tr>
-          <tr>
-            <td>2.</td>
-            <td>B</td>
-            <td>wiersz drugi</td>
-          </tr>
-          <tr>
-            <td>3.</td>
-            <td>C</td>
-            <td>wiersz trzeci</td>
-          </tr>
-          </tbody>
-        </table>
+              <dt>Span</dt>
+              <dd>
+                Span to prawie to samo co div ale maa ustawiony display: inline
+              </dd>
+            </dl>
+            <p class="week-summary__description">Tabela</p>
+            <table class="table">
+              <caption>
+                Przykładowa tabelka w html
+              </caption>
+              <thead>
+                <tr>
+                  <th>Kolumna A</th>
+                  <th>Kolumna B</th>
+                  <th>Kolumna C</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.</td>
+                  <td>A</td>
+                  <td>wiersz pierwszy</td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>B</td>
+                  <td>wiersz drugi</td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>C</td>
+                  <td>wiersz trzeci</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
       </article>
-
-      <footer class="footer">Footer: To jest strona domowa Pawła Bedera</footer>
-      <script src="script.js"></script>
+      <aside class="aside">
+        <section class="about">
+          <h2 class="about__header">Kim jestem?</h2>
+          <img
+            class="about__picture"
+            alt="Paweł Beder zdjęcie"
+            src="przyciete3.png"
+          />
+          <p class="about__description">
+            Cześć Jesetm programistą Java który chciałby się w końcu nauczyć
+            JavaScript
+          </p>
+        </section>
+      </aside>
     </main>
+    <footer class="footer">Footer: To jest strona domowa Pawła Bedera</footer>
   </body>
 </html>

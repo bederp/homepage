@@ -7,12 +7,13 @@ html {
 *:after {
   box-sizing: inherit;
 }
-section {
-  background: white;
+
+html {
+  min-height: 100%;
 }
 
-.main__heading {
-  color: blue;
+body {
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
 }
 
 p {
@@ -21,6 +22,28 @@ p {
 
 h2 {
   color: magenta;
+}
+
+img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+.main__article {
+  background: white;
+}
+
+.main__heading {
+  color: blue;
+  padding-left: 16px;
+}
+
+.notes__heading {
+  padding-left: 16px;
 }
 
 #top {
@@ -35,6 +58,8 @@ h2 {
   background: #00e734;
   padding: 16px;
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
 }
 
 .navigation__link {
@@ -52,6 +77,10 @@ h2 {
   border: 2px solid black;
 }
 
+.week-summary:last-of-type {
+  margin-bottom: 0;
+}
+
 .week-summary__title {
   color: brown;
 }
@@ -65,14 +94,14 @@ h2 {
   margin: 0 auto;
 }
 
-img {
-  margin: 0 auto;
-}
-
 .list {
   list-style: square;
 }
 
-table {
-  width: 100%;
+@media (min-width: 768px) {
+  .main {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 200px;
+  }
 }
