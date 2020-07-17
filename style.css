@@ -33,6 +33,14 @@ table {
   width: 100%;
 }
 
+.hamburger {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border-style: none;
+  background-color: transparent;
+}
+
 .main__article {
   background: white;
 }
@@ -51,20 +59,30 @@ table {
 }
 
 .header {
-  background: #d5d5d5;
+  background: transparent;
+  position: fixed;
+  min-width: 100%;
+  top: 0px;
+
 }
 
 .navigation {
-  background: #00e734;
+  background: transparent;
   padding: 16px;
   border-radius: 8px;
-  display: flex;
   justify-content: center;
+  display: none;
+}
+
+.navigation__open{
+  background: black;
+  display: block;
 }
 
 .navigation__link {
   color: white;
-  padding-right: 8px;
+  display: block;
+  padding-bottom: 16px;
 }
 
 .navigation__link-homepage {
@@ -103,5 +121,17 @@ table {
     display: grid;
     grid-gap: 16px;
     grid-template-columns: 1fr 200px;
+  }
+
+  .navigation {
+    background: #00e734;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hamburger {
+    display: none;
   }
 }
